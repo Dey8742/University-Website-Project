@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imgs/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs for 2025</h1>
+    </section>
+
+    <!-- -----------------------------Blog Page Content----------------------- -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="imgs/certificate.jpg">
+                <h2>Our Certificates & Online Programs for 2025</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas expedita voluptatem illum!
+                    Qui ratione exercitationem repellat culpa. Reiciendis natus ab facilis, deserunt nihil facere quia
+                    aliquid vitae inventore quibusdam officiis assumenda officia.
+                    s</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, temporibus. Excepturi corrupti
+                    reiciendis voluptates esse, tempore fuga soluta quidem dolorum pariatur inventore obcaecati repellat
+                    itaque accusantium, est atque illum doloremque alias vero modi? Itaque possimus sit libero corrupti
+                    recusandae sunt error deserunt quibusdam ab ex obcaecati ipsam quae tempore cupiditate voluptatibus
+                    ipsa nihil, aperiam explicabo nulla?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta exercitationem a itaque ut ullam est,
+                    deserunt esse doloribus tempore voluptate illum culpa officiis repellendus tenetur aut veritatis.
+                    Voluptates quis assumenda illum inventore nihil, enim optio voluptatem aliquid ad ea amet officia
+                    autem alias vel ipsum quaerat adipisci sed quas accusantium nesciunt sapiente fugiat labore? Est rem
+                    maxime dolorem voluptas ad voluptatum ipsum voluptatibus, sapiente velit?
+                </p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam natus nam, incidunt velit ut
+                    repudiandae dolore vero, ratione doloribus fugit sint quos? Vero minima, qui sapiente soluta
+                    molestiae dicta dolores.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>31</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>61</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Marketing</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>CyberSecurity</span>
+                    <span>45</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- -----------footer----------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford is dedicated to providing quality education, fostering innovation, and preparing students for future
+            success. With expert faculty, modern facilities, and industry-aligned programs, we create a dynamic learning
+            environment that nurtures growth and leadership. Join us at Eduford and shape a brighter future.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> with Ankit Kumar Dey </p>
+    </section>
+
+
+    <!-- --------------------JavaScript used here for Toggle Menu----------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

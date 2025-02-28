@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imgs/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- ----------about us content------ -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aperiam cupiditate aspernatur
+                    consectetur! Accusantium debitis culpa consectetur tempore recusandae ratione quaerat consequuntur
+                    voluptatem quia inventore temporibus nam, impedit dolor maiores aut odit, accusamus deleniti.
+                    Numquam ipsam, vel nemo sint repudiandae quis libero nostrum ducimus blanditiis culpa at debitis
+                    ratione et sapiente laboriosam optio recusandae, quae delectus.
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="imgs/about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- -----------footer----------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Eduford is dedicated to providing quality education, fostering innovation, and preparing students for future
+            success. With expert faculty, modern facilities, and industry-aligned programs, we create a dynamic learning
+            environment that nurtures growth and leadership. Join us at Eduford and shape a brighter future.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> with Ankit Kumar Dey </p>
+    </section>
+
+
+    <!-- --------------------JavaScript used here for Toggle Menu----------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
